@@ -13,26 +13,49 @@
           <h1> TITOLO 1 </h1><!--titolo-->
       </header>
 
+      <section style="float: left;width:80%;border-right: 1px solid black">
 
-      <article style="float: left;width:80%;border-right: 1px solid black"><!--articolo-->
+          <header >
+              <h2>Questo e' l'article</h2>
+          </header>
 
-              <h2>titolo paragrafo</h2>
+          <article >
+              <h4>titolo paragrafo</h4>
               <p>questo paragrafo sta nell'article</p>
               <p>seconda riga</p>
               <p>terza riga</p>
               <p>ultima riga</p>
+          </article>
 
-          <h3>scegliere un numero</h3><!--scelta-->
-          <form  action="url" method="post">
-              <select>
-                <optgroup label="numeri disp" >
-                  <option value="num 1">num1</option>
-                  <option value="num 2">num2</option>
-                  <option value="num 3">num3</option>
-                </optgroup>
-              </select>
-          </form>
-      </article>
+          <article >
+              <h4>scegliere un numero</h4><!--scelta-->
+              <form  action="url" method="post">
+                  <select>
+                    <optgroup label="numeri disp" >
+                      <option value="num 1">num1</option>
+                      <option value="num 2">num2</option>
+                      <option value="num 3">num3</option>
+                    </optgroup>
+                  </select>
+              </form>
+          </article>
+          <aside >
+              <h4>dati personali:</h4>
+              <form action="url" method="post">
+                  nome:<br>
+                  <input type="text" name="nome" value="nome"><br>
+                  cognome:<br>
+                  <input type="text" name="cognome" value="cognome"><br>
+                  data nascita:<br>
+                  <input type="date" name="bday"><br>
+                  <input type="submit" name="invia" >
+              </form>
+          </aside>
+          <footer>
+              <p>questo e' il footer dell'article</p>
+          </footer>
+
+      </section>
 
 
       <nav style="float: left;width: 18%;"><!--nav bar-->
@@ -44,14 +67,13 @@
           </ul>
       </nav>
 
-      <aside >
-        <form action="url" method="post">
 
-        </form>
-      </aside>
 
       <footer><!-- footer-->
-          <p>inserire alcuni dati personali</p>
+          <address>
+            <h4>Contattaci:</h4>
+            <a href="mailto:samuel.palladino@soprasteria.com">samuel.palladino@soprasteria.com</a><br>
+          </address>
       </footer>
 
 </html>

@@ -7,24 +7,36 @@
     <base href="url" target="_blank"> <!-- collegamento base-->
   </head>
 
-  <body  >
+  <body>
 
-      <header>
-          <h1><strong> TITOLO 1 </strong></h1><!--titolo-->
+      <header style="border-bottom: 1px solid black">
+          <h1> TITOLO 1 </h1><!--titolo-->
       </header>
 
 
-      <article style="float: left;width:80%;"><!--articolo-->
-        <h2>paragrafo principale</h2>
-          <p>questo paragrafo sta nell'article</p>
-          <p>seconda riga</p>
-          <p>terza riga</p>
-          <p>ultima riga</p>
+      <article style="float: left;width:80%;border-right: 1px solid black"><!--articolo-->
+
+              <h2>titolo paragrafo</h2>
+              <p>questo paragrafo sta nell'article</p>
+              <p>seconda riga</p>
+              <p>terza riga</p>
+              <p>ultima riga</p>
+
+          <h3>scegliere un numero</h3><!--scelta-->
+          <form  action="url" method="post">
+              <select>
+                <optgroup label="numeri disp" >
+                  <option value="num 1">num1</option>
+                  <option value="num 2">num2</option>
+                  <option value="num 3">num3</option>
+                </optgroup>
+              </select>
+          </form>
       </article>
 
 
-      <nav style="float: left;width: 20%;"><!--nav bar-->
-        <strong>pagine disponibili:</strong>
+      <nav style="float: left;width: 18%;"><!--nav bar-->
+          <strong>pagine disponibili:</strong>
           <ul>
             <li><a href="/url1">pagina 1</a></li>
             <li><a href="/url2">pagina 2</a></li>
@@ -32,9 +44,14 @@
           </ul>
       </nav>
 
+      <aside >
+        <form action="url" method="post">
+
+        </form>
+      </aside>
 
       <footer><!-- footer-->
-          <p>informazioni fine pagina</p>
+          <p>inserire alcuni dati personali</p>
       </footer>
 
 </html>

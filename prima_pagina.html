@@ -13,24 +13,59 @@
     </style>
   </head>
 
-  <body  >
+  <body>
 
-      <header>
-          <h1><strong> TITOLO 1 </strong></h1><!--titolo-->
+      <header style="border-bottom: 1px solid black">
+          <h1> TITOLO 1 </h1><!--titolo-->
       </header>
 
+      <section style="float: left;width:80%;border-right: 1px solid black">
 
-      <article style="float: left;width:80%;"><!--articolo-->
-        <h2>paragrafo principale</h2>
-          <p>questo paragrafo sta nell'article</p>
-          <p>seconda riga</p>
-          <p>terza riga</p>
-          <p>ultima riga</p>
-      </article>
+          <header >
+              <h2>Questo e' l'article</h2>
+          </header>
+
+          <article >
+              <h4>titolo paragrafo</h4>
+              <p>questo paragrafo sta nell'article</p>
+              <p>seconda riga</p>
+              <p>terza riga</p>
+              <p>ultima riga</p>
+          </article>
+
+          <article >
+              <h4>scegliere un numero</h4><!--scelta-->
+              <form  action="url" method="post">
+                  <select>
+                    <optgroup label="numeri disp" >
+                      <option value="num 1">num1</option>
+                      <option value="num 2">num2</option>
+                      <option value="num 3">num3</option>
+                    </optgroup>
+                  </select>
+              </form>
+          </article>
+          <aside >
+              <h4>dati personali:</h4>
+              <form action="url" method="post">
+                  nome:<br>
+                  <input type="text" name="nome" value="nome"><br>
+                  cognome:<br>
+                  <input type="text" name="cognome" value="cognome"><br>
+                  data nascita:<br>
+                  <input type="date" name="bday"><br>
+                  <input type="submit" name="invia" >
+              </form>
+          </aside>
+          <footer>
+              <p>questo e' il footer dell'article</p>
+          </footer>
+
+      </section>
 
 
-      <nav style="float: left;width: 20%;"><!--nav bar-->
-        <strong>pagine disponibili:</strong>
+      <nav style="float: left;width: 18%;"><!--nav bar-->
+          <strong>pagine disponibili:</strong>
           <ul>
             <li><a href="/url1">pagina 1</a></li>
             <li><a href="/url2">pagina 2</a></li>
@@ -39,8 +74,12 @@
       </nav>
 
 
+
       <footer><!-- footer-->
-          <p>informazioni fine pagina</p>
+          <address>
+            Contattaci:
+            <a href="mailto:samuel.palladino@soprasteria.com">samuel.palladino@soprasteria.com</a><br>
+          </address>
       </footer>
 
 </html>

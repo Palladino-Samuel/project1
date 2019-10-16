@@ -5,27 +5,22 @@
   <head>
     <title> prima pagina </title>
     <base href="url" target="_blank"> <!-- collegamento base-->
-    <style media="screen">
-      header{
-        background-color: red;
-      }
-      
-    </style>
+
   </head>
 
   <body>
 
-      <header style="border-bottom: 1px solid black">
+      <header style="border-bottom: 1px solid black;">
           <h1> TITOLO 1 </h1><!--titolo-->
       </header>
 
       <section style="float: left;width:80%;border-right: 1px solid black">
 
-          <header >
+          <header style="width:100%; border-bottom:1px solid grey;">
               <h2>Questo e' l'article</h2>
           </header>
 
-          <article >
+          <article style="width:33%; border-right:0.5px solid grey;float:left">
               <h4>titolo paragrafo</h4>
               <p>questo paragrafo sta nell'article</p>
               <p>seconda riga</p>
@@ -33,7 +28,7 @@
               <p>ultima riga</p>
           </article>
 
-          <article >
+          <article style="width:33%;float:left">
               <h4>scegliere un numero</h4><!--scelta-->
               <form  action="url" method="post">
                   <select>
@@ -45,7 +40,8 @@
                   </select>
               </form>
           </article>
-          <aside >
+
+          <aside style="width:33%; border-left:0.5px solid grey;float:left">
               <h4>dati personali:</h4>
               <form action="url" method="post">
                   nome:<br>
@@ -57,7 +53,8 @@
                   <input type="submit" name="invia" >
               </form>
           </aside>
-          <footer>
+
+          <footer style="width:100%; border-top:0.5px solid grey; float:left;">
               <p>questo e' il footer dell'article</p>
           </footer>
 
@@ -75,7 +72,7 @@
 
 
 
-      <footer><!-- footer-->
+      <footer style="width:100%;float:left;border-top:1px solid black;"><!-- footer-->
           <address>
             Contattaci:
             <a href="mailto:samuel.palladino@soprasteria.com">samuel.palladino@soprasteria.com</a><br>

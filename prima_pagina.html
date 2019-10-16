@@ -3,23 +3,21 @@
 <html lang="en">
 
   <head>
-    <title> prima pagina </title>
-    <base href="url" target="_blank"> <!-- collegamento base-->
+      <title> prima pagina </title>
+      <base href="url" target="_blank"> <!-- collegamento base-->
   </head>
-
   <body>
 
-      <header style="border-bottom: 1px solid black">
-          <h1> TITOLO 1 </h1><!--titolo-->
+      <header >
+          <h1> TITOLO 1 </h1>
       </header>
 
-      <section style="float: left;width:80%;border-right: 1px solid black">
-
-          <header >
+      <section >                <!--section-->
+          <header >             <!--  section->header   -->
               <h2>Questo e' l'article</h2>
           </header>
 
-          <article >
+          <article >            <!--  section->1 article   -->
               <h4>titolo paragrafo</h4>
               <p>questo paragrafo sta nell'article</p>
               <p>seconda riga</p>
@@ -27,8 +25,8 @@
               <p>ultima riga</p>
           </article>
 
-          <article >
-              <h4>scegliere un numero</h4><!--scelta-->
+          <article >            <!--  section->2 article   -->
+              <h4>scegliere un numero</h4>
               <form  action="url" method="post">
                   <select>
                     <optgroup label="numeri disp" >
@@ -39,9 +37,10 @@
                   </select>
               </form>
           </article>
-          <aside >
+
+          <aside >              <!--  section->aside   -->
               <h4>dati personali:</h4>
-              <form action="url" method="post">
+              <form action="url" method="post" autocomplete="off">
                   nome:<br>
                   <input type="text" name="nome" value="nome"><br>
                   cognome:<br>
@@ -51,14 +50,13 @@
                   <input type="submit" name="invia" >
               </form>
           </aside>
-          <footer>
+
+          <footer>               <!--  section->footer   -->
               <p>questo e' il footer dell'article</p>
           </footer>
-
       </section>
 
-
-      <nav style="float: left;width: 18%;"><!--nav bar-->
+      <nav ><!--nav bar-->
           <strong>pagine disponibili:</strong>
           <ul>
             <li><a href="/url1">pagina 1</a></li>
@@ -66,8 +64,6 @@
             <li><a href="/url3">pagina 3</a></li>
           </ul>
       </nav>
-
-
 
       <footer><!-- footer-->
           <address>

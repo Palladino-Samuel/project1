@@ -31,6 +31,61 @@
                 <textarea name="name" rows="8" cols="50"></textarea>
             </form>
         </aside>
+
+        <section>
+          <form action="myFunction()">
+              <table>
+                  <thead>
+                      <tr>
+                        <th>n</th>
+                        <th>surname</th>
+                        <th>cash</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Rossi</td>
+                        <td ><input type="number" name="cash" min="0" max="10000"  id="a1"value="2" disabled></td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Mariani</td>
+                        <td ><input type="number" name="cash" min="0" max="10000" id="a2" value="3000"></td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>Ferrari</td>
+                        <td ><input type="number" name="cash" min="0" max="10000"  id="a3" value=""></td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>Conte</td>
+                        <td ><input type="number" name="cash" min="0" max="10000"  id="a4" value=""></td>
+                      </tr>
+                  </tbody>
+                  <tfoot>
+                      <tr>
+                        <td></td>
+                        <td>totale:</td>
+                        <td id="somma"></td>
+                      </tr>
+                  </tfoot>
+
+              </table>
+          </form>
+              <script type="text/javascript">
+                  function myFunction(){
+                    var a1 = document.getElementById("a1").innerHtml;
+                    var a2 = document.getElementById("a2").innerHtml;
+                    var a3 = document.getElementById("a3").innerHtml;
+                    var a4 = document.getElementById("a4").innerHtml;
+                    var som=a1+a2+a3+a4;
+                    document.getElementById("somma").innerHTML=(som);
+                  }
+              </script>
+              <button type="button" onclick="myFunction()">somma</button>
+        </section>
       </section>
 
       <nav ><!--nav bar-->

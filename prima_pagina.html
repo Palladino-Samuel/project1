@@ -4,7 +4,6 @@
 
   <head>
       <title> prima pagina </title>
-      <base href="url" target="_blank"> <!-- collegamento base-->
   </head>
   <body>
 
@@ -16,7 +15,6 @@
           <header >             <!--  section->header   -->
               <h2>Questo e' l'article</h2>
           </header>
-
           <article >            <!--  section->1 article   -->
               <h4>titolo paragrafo</h4>
               <p>questo paragrafo sta nell'article</p>
@@ -24,49 +22,39 @@
               <p>terza riga</p>
               <p>ultima riga</p>
           </article>
-
           <article >            <!--  section->2 article   -->
-              <h4>scegliere un numero</h4>
+
               <form  action="url" method="post">
-                  <select>
-                    <optgroup label="numeri disp" >
-                      <option value="num 1">num1</option>
-                      <option value="num 2">num2</option>
-                      <option value="num 3">num3</option>
-                    </optgroup>
-                  </select>
+                <h4>scegli un numero</h4>
+                    <select>
+                      <optgroup label="numeri disp" >
+                        <option value="num 1">1</option>
+                        <option value="num 2">2</option>
+                        <option value="num 3">3</option>
+                      </optgroup>
+                    </select>
+                <h4>scegli una parola</h4>
+                    <input type="checkbox" name="parola" value="parola1"> parola 1
+                    <input type="checkbox" name="parola" value="parola2"> parola 2
+                    <input type="checkbox" name="parola" value="parola3"> parola 3
+                <h4>seleziona un livello:</h4>
+                    <label >
+                        <input type="radio" name="livello" value="base" id="b">
+                        base
+                    </label>
+                    <label >
+                        <input type="radio" name="livello" value="medio" id="m">
+                        medio
+                    </label>
+                    <label >
+                        <input type="radio" name="livello" value="alto" id="a">
+                        alto
+                    </label>
               </form>
+
           </article>
-
-          <aside >              <!--  section->aside   -->
-              <h4>dati personali:</h4>
-              <form action="url" method="post" autocomplete="off">
-                  nome:
-                  <input type="text" name="nome" value="nome"><br>
-                  cognome:
-                  <input type="text" name="cognome" value="cognome"><br>
-                  data nascita:
-                  <input type="date" name="bday"><br>
-                  <input type="submit" name="invia" >
-              </form>
-          </aside>
-
           <footer>               <!--  section->footer   -->
-              <strong>seleziona un livello:</strong>
-              <form action="url" method="post">
-                  <label >
-                      <input type="radio" name="livello" value="base" id="b">
-                      base
-                  </label>
-                  <label >
-                      <input type="radio" name="livello" value="medio" id="m">
-                      medio
-                  </label>
-                  <label >
-                      <input type="radio" name="livello" value="alto" id="a">
-                      alto
-                  </label>
-              </form>
+              <p>questo e' il footer della section</p>
           </footer>
 
       </section>
@@ -76,7 +64,7 @@
           <ul>
             <li><a href="prima_pagina.html">pagina 1</a></li>
             <li><a href="seconda_pagina.html">pagina 2</a></li>
-            <li><a href="/url3">pagina 3</a></li>
+            <li><a href="pagina_utente.html">pagina 3</a></li>
           </ul>
       </nav>
 

@@ -3,7 +3,7 @@
 
   <head>
       <title> seconda pagina </title>
-      <meta charset="utf-8s">
+      <meta charset="UTF-8">
   </head>
   <body>
 
@@ -15,7 +15,7 @@
         <h2>inserimento dati utente</h2>
         <aside >              <!--  section->aside   -->
             <h3>dati personali:</h3>
-            <form action="url" method="post" autocomplete="off">
+            <form  action="url" method="post">
                 nome:
                 <input type="text" name="nome" value="nome"><br>
                 cognome:
@@ -25,6 +25,7 @@
                 <input type="submit" name="invia" >
             </form>
         </aside>
+
         <aside>
             <form action="url" method="post" autocomplete="off">
                 <h3>inserisci una tua descrizione:</h3>
@@ -34,7 +35,8 @@
 
         <section>
           <h3>tabella:</h3>
-          <form action="myFunction()">
+          <form action="sommaFunction()">
+
               <table>
                 <caption>nome e guadagni</caption>
                   <thead>
@@ -48,22 +50,22 @@
                       <tr>
                         <td>1</td>
                         <td>Rossi</td>
-                        <td ><input type="number" name="cash" min="0" max="10000"  id="a1" value="2" disabled></td>
+                        <td ><input type="number" name="s" min="0" max="10000"  id="a1" value="200" disabled></td>
                       </tr>
                       <tr>
                         <td>2</td>
                         <td>Mariani</td>
-                        <td ><input type="number" name="cash" min="0" max="10000" id="a2" value="3000"></td>
+                        <td ><input type="number" name="d" min="0" max="10000" id="a2" value="300"></td>
                       </tr>
                       <tr>
                         <td>3</td>
                         <td>Ferrari</td>
-                        <td ><input type="number" name="cash" min="0" max="10000"  id="a3" value=""></td>
+                        <td ><input type="number" name="f" min="0" max="10000"  id="a3" value="350"></td>
                       </tr>
                       <tr>
                         <td>4</td>
                         <td>Conte</td>
-                        <td ><input type="number" name="cash" min="0" max="10000"  id="a4" value=""></td>
+                        <td ><input type="number" name="g" min="0" max="10000"  id="a4" value=""></td>
                       </tr>
                   </tbody>
                   <tfoot>
@@ -73,21 +75,28 @@
                         <td id="somma"></td>
                       </tr>
                   </tfoot>
-
               </table>
+
           </form>
+
               <script type="text/javascript">
-                  function myFunction(){
-                    var a1 = document.getElementById("a11").innerHtml;
-                    var a2 = document.getElementById("a2").innerHtml;
-                    var a3 = document.getElementById("a3").innerHtml;
-                    var a4 = document.getElementById("a4").innerHtml;
-                    var som=eval(a1+a2+a3+a4);
-                    document.getElementById("somma").innerHTML=(som);
+                  function sommaFunction(){
+                     var a1 = parseInt(document.getElementById("a1").value);
+                     var a2 = parseInt(document.getElementById("a2").value);
+                     var a3 = parseInt(document.getElementById("a3").value);
+                     var a4 = parseInt(document.getElementById("a4").value);
+                     var som=(a1+a2+a3+a4);
+                     document.getElementById("somma").innerHTML=(som+'  €');
                   }
               </script>
-              <button type="button" onclick="myFunction()">somma</button>
+
+              <noscript>
+                script non supportato
+              </noscript>
+
+              <button type="button" onclick="sommaFunction()">somma</button>
         </section>
+
       </section>
 
       <nav ><!--nav bar-->

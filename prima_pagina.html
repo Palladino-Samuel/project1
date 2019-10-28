@@ -5,6 +5,13 @@
   <head>
       <title> prima pagina </title>
       <meta charset="UTF-8">
+      <meta name="viewport" id="viewportMeta" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+      <meta property="og:site_name" content="prima_pagina project1">
+      <meta property="og:site_name" content="prima_pagina project1">
+      <meta property="og:image" content="img/img_meta.png">
+      <meta name="og:description" content="il sito su scala globale migliore ">
+      <meta property="article:author" content="Samuel Palldino">
+      <meta name=”robots” content=”all”>
   </head>
   <body>
 
@@ -25,8 +32,8 @@
           </article>
           <article >            <!--  section->2 article   -->
 
-              <form  action="url" method="post">
-                <h3>scegli un numero</h3>
+              <form class="" action="url" method="post">
+                    <h3>scegli un numero</h3>
                     <select>
                       <optgroup label="numeri disp" >
                         <option value="num 1">1</option>
@@ -34,26 +41,21 @@
                         <option value="num 3">3</option>
                       </optgroup>
                     </select>
-                <h3>scegli una parola</h3>
+                    <h3>scegli una parola</h3>
                     <input type="checkbox" name="parola" value="parola1"> parola 1
                     <input type="checkbox" name="parola" value="parola2"> parola 2
                     <input type="checkbox" name="parola" value="parola3"> parola 3
-                <h3>seleziona un livello:</h3>
-                    <label >
-                        <input type="radio" name="livello" value="base" id="b">
-                        base
-                    </label>
-                    <label >
-                        <input type="radio" name="livello" value="medio" id="m">
-                        medio
-                    </label>
-                    <label >
-                        <input type="radio" name="livello" value="alto" id="a">
-                        alto
-                    </label>
-              </form>
 
+                    <h3>seleziona se pari o dispari:</h3>
+                    <input type="radio" name="num" value="pari" id="p">
+                    pari
+                    <input type="radio" name="num" value="dispari" id="d">
+                    dispari
+
+                    <button type="button" onclick="">vai</button>
+              </form>
           </article>
+
           <footer>               <!--  section->footer   -->
               <p>questo è il footer della section</p>
           </footer>

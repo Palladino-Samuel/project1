@@ -12,25 +12,34 @@
       <meta name="og:description" content="il sito su scala globale migliore ">
       <meta property="article:author" content="Samuel Palldino">
       <meta name=”robots” content=”all”>
+      <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body >
 
-      <header >
+      <header id="header1">
           <h1> TITOLO 1 </h1>
       </header>
 
-      <section >                <!--section-->
-          <header >             <!--  section->header   -->
-              <h2>Questo è l'article</h2>
+      <section id="section">
+          <header id="header2">             <!--  section->header   -->
+              <ul class="uMenu">
+                <li class="aMenu" >Home</li>
+                <li ><a class="aMenu" href="prima_pagina.html">pag1</a></li>
+                <li ><a class="aMenu" href="seconda_pagina.html">pag2</a></li>
+                <li ><a class="aMenu" href="pagina_utente.html">pag3</a></li>
+                <input class="btnMenu" type="submit" name="" value="vai">
+                <li class="srchMenu"> <input  type="search" name="" value=""> </li>
+
+              </ul>
           </header>
-          <article >            <!--  section->1 article   -->
+          <article id="article1">            <!--  section->1 article   -->
               <h3>titolo paragrafo</h3>
               <p>questo paragrafo sta nell'article</p>
               <p>seconda riga</p>
               <p>terza riga</p>
               <p>ultima riga</p>
           </article>
-          <article >            <!--  section->2 article   -->
+          <article id="article2">            <!--  section->2 article   -->
 
               <form class="" action="url" method="post">
                     <h3>scegli un numero</h3>
@@ -55,27 +64,24 @@
                     <button type="button" onclick="">vai</button>
               </form>
           </article>
-
-          <footer>               <!--  section->footer   -->
+          <nav id="nav">
+              <strong>pagine disponibili:</strong>
+              <ul>
+                <li><a href="prima_pagina.html">pagina 1</a></li>
+                <li><a href="seconda_pagina.html">pagina 2</a></li>
+                <li><a href="pagina_utente.html">pagina 3</a></li>
+              </ul>
+          </nav>
+          <footer id="footer1">               <!--  section->footer   -->
               <p>questo è il footer della section</p>
           </footer>
 
       </section>
 
-      <nav ><!--nav bar-->
-          <strong>pagine disponibili:</strong>
-          <ul>
-            <li><a href="prima_pagina.html">pagina 1</a></li>
-            <li><a href="seconda_pagina.html">pagina 2</a></li>
-            <li><a href="pagina_utente.html">pagina 3</a></li>
-          </ul>
-      </nav>
-
-      <footer><!-- footer-->
-          <address>
+      <footer id="footer2">
             Contattaci:
             <a href="mailto:samuel.palladino@soprasteria.com">samuel.palladino@soprasteria.com</a><br>
-          </address>
       </footer>
 
+  </body>
 </html>

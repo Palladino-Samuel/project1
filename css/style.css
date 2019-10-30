@@ -1,86 +1,29 @@
-#header1 {
-  width: 98%;
-  height: 20%;
-  text-align: center;
-}
-#header2 {
-  width: 100%;
-}
-
-#section {
-  width: 100%;
-  height: auto;
-  float: left;
-}
-#article1 {
-  width: 37%;
-  float: left;
-  padding-left: 5%;
-}
-#article2 {
-  width: 36%;
-  text-align: justify;
-  float: left;
-  padding-left: 5%;
-}
-#nav {
-  width: 10%;
-  height: inherit;
-  float: left;
-  text-align: center;
-  padding: 3%;
-  padding-bottom: auto;
-  padding-top: 5%;
+.titolo {
+  text-align: left;
+  font-family: serif;
+  color: black;
+  font-size: 40px;
+  margin-top: 8px;
+  padding-bottom: 5px;
 }
 
-#footer1 {
-  width: 99.89%;
-  height: auto;
-  float: left;
-  margin-top: 9%;
-}
-#footer2 {
-  width: 99%;
-  margin-top: 40%;
-  padding: 4px;
-  border-top: 1px solid #333;
-  border-left: 1px solid #333;
-  border-radius: 2px;
+.background_color1{
+  background-color: rgba(0, 0, 200, 0.1);
 }
 
-.uMenu {
-  list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
+.font_1{
+  font-style: italic;
+  font-size: 18px;
 }
-.aMenu {
-  display: block;
-  color: white;
-  padding: 14px 18px;
+.font_2{
+  font-style:serif;
+  font-size: 19px;
+}
+.img_social a{
   text-decoration: none;
-  float: left;
+  margin-left: 2px;
 }
-.aMenu:hover{
-  background-color: black;
-  text-decoration: none;
-}
-.srchMenu {
-  display: block;
-  color: white;
-  padding: 12.5px 18px;
-  text-decoration: none;
-  float: right;
-}
-.srchMenu >input{
-  background: rgb(240,240,240);
-}
-.btnMenu {
-  display: block;
-  color: #333;
-  padding: 5px 18px ;
-  text-decoration: none;
-  float: right;
-  margin: 9px 10px auto auto;
+.img_social img{
+  width: 33px;
+  height: 33px;
 }

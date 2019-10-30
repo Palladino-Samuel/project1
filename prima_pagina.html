@@ -12,50 +12,52 @@
       <meta name="og:description" content="il sito su scala globale migliore ">
       <meta property="article:author" content="Samuel Palldino">
       <meta name=”robots” content=”all”>
+      <link rel="stylesheet" href="css/structure.css">
       <link rel="stylesheet" href="css/style.css">
   </head>
-  <body >
+  <body class="body_set">
 
-      <header id="header1">
-          <h1> TITOLO 1 </h1>
+      <header class="header_container">
+          <h1 class="titolo"> Prima pagina </h1>
       </header>
 
-      <section id="section">
-          <header id="header2">             <!--  section->header   -->
-              <ul class="uMenu">
+      <section class="section_container">
+          <header class="header_container">             <!--  section->header   -->
+              <ul class="uMenu " id="ul">
                 <li class="aMenu" >Home</li>
                 <li ><a class="aMenu" href="prima_pagina.html">pag1</a></li>
                 <li ><a class="aMenu" href="seconda_pagina.html">pag2</a></li>
-                <li ><a class="aMenu" href="pagina_utente.html">pag3</a></li>
+                <li ><a class="aMenu" href="pagina_utente.html">pag3 </a></li>
                 <input class="btnMenu" type="submit" name="" value="vai">
                 <li class="srchMenu"> <input  type="search" name="" value=""> </li>
 
               </ul>
           </header>
-          <article id="article1">            <!--  section->1 article   -->
-              <h3>titolo paragrafo</h3>
-              <p>questo paragrafo sta nell'article</p>
-              <p>seconda riga</p>
-              <p>terza riga</p>
-              <p>ultima riga</p>
+          <article class="article_container">            <!--  section->1 article   -->
+              <h3>Titolo paragrafo</h3>
+              <p class="font_1">questo paragrafo sta nell'article</p>
+              <p class="font_1">seconda riga</p>
+              <p class="font_2">terza riga</p>
+              <p class="font_2">ultima riga</p>
           </article>
-          <article id="article2">            <!--  section->2 article   -->
+
+          <article class="article_container">            <!--  section->2 article   -->
 
               <form class="" action="url" method="post">
-                    <h3>scegli un numero</h3>
-                    <select>
-                      <optgroup label="numeri disp" >
+                    <h3 >Scegli un numero</h3>
+                    <select >
+                      <optgroup  class="optgroup" label="numeri disp" >
                         <option value="num 1">1</option>
                         <option value="num 2">2</option>
                         <option value="num 3">3</option>
                       </optgroup>
                     </select>
-                    <h3>scegli una parola</h3>
+                    <h3>Scegli una parola</h3>
                     <input type="checkbox" name="parola" value="parola1"> parola 1
                     <input type="checkbox" name="parola" value="parola2"> parola 2
                     <input type="checkbox" name="parola" value="parola3"> parola 3
 
-                    <h3>seleziona se pari o dispari:</h3>
+                    <h3>Seleziona se pari o dispari:</h3>
                     <input type="radio" name="num" value="pari" id="p">
                     pari
                     <input type="radio" name="num" value="dispari" id="d">
@@ -64,23 +66,28 @@
                     <button type="button" onclick="">vai</button>
               </form>
           </article>
-          <nav id="nav">
-              <strong>pagine disponibili:</strong>
-              <ul>
-                <li><a href="prima_pagina.html">pagina 1</a></li>
-                <li><a href="seconda_pagina.html">pagina 2</a></li>
-                <li><a href="pagina_utente.html">pagina 3</a></li>
+          <nav class="nav_container background_color1">
+              <strong>Pagine accessibili:</strong>
+              <ul class="uMenu b">
+                <li><a class="aMenu" href="prima_pagina.html">pagina 1</a></li>
+                <li><a class="aMenu" href="seconda_pagina.html">pagina 2</a></li>
+                <li><a class="aMenu" href="pagina_utente.html">pagina 3</a></li>
               </ul>
           </nav>
-          <footer id="footer1">               <!--  section->footer   -->
-              <p>questo è il footer della section</p>
+          <footer class="footer1 ">               <!--  section->footer   -->
+              <p>Questo è il footer della section</p>
           </footer>
 
       </section>
 
-      <footer id="footer2">
-            Contattaci:
-            <a href="mailto:samuel.palladino@soprasteria.com">samuel.palladino@soprasteria.com</a><br>
+      <footer class="footer2">
+        <div class="img_social">
+          <a href="#"> <img src="img/social/google.png"> </a>
+          <a href="#"> <img src="img/social/insta.png"> </a>
+          <a href="#"> <img src="img/social/facebook.png"> </a>
+          <a href="#"> <img src="img/social/youtube.jpg"> </a>
+        </div>
+        <p>Contattaci:  <a href="mailto:samuel.palladino@soprasteria.com">samuel.palladino@soprasteria.com</a></p>
       </footer>
 
   </body>

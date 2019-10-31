@@ -6,6 +6,12 @@
   margin-top: 8px;
   padding-bottom: 5px;
 }
+.titolo1 {
+  text-align: center;
+  font-family: serif;
+  color: black;
+  font-size: 40px;
+}
 
 .background_color1{
   background-color: rgba(0, 0, 200, 0.1);
@@ -18,6 +24,11 @@
 .font_2{
   font-style:serif;
   font-size: 19px;
+}
+.font_3{
+  font-style:serif;
+  font-size: 19px;
+  text-align: center;
 }
 .img_social a{
   text-decoration: none;

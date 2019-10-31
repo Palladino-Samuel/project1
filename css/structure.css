@@ -40,14 +40,14 @@
 }
 .footer2 {
   width: 99%;
-  margin-top: 39%;
-  padding: 0px 4px 0px 4px;
+  margin-top: 450px;
+  padding: auto ;
   border-top: 1px solid #333;
   border-left: 1px solid #333;
   border-radius: 2px;
 }
 
-/*menu orizzontale*/
+/*menu orizzontale prima_pagina.html*/
 .uMenu {
     list-style-type: none;
     overflow: hidden;
@@ -88,6 +88,38 @@
   border-top: 2px solid rgb(40,114,51);
   border-left: 2px solid rgb(0,187,45);
 }
+
+/*barra menu pagina_utente.html*/
+.uM_Utente{
+  list-style-type: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background: #333;
+}
+.aM_Utente{
+  display: block;
+  color: white;
+  padding: 24px 35px;
+  text-decoration: none;
+  float: left;
+}
+.aM_Utente:hover{
+  background-color: rgb(15,23,34);
+}
+#srchM_Utente {
+  padding: 22px 18px;
+}
+#btnM_Utente {
+  padding: 7px 20px ;
+  margin: 17px 10px auto auto;
+}
+#b_Utente{
+  margin-top: 20px;
+  border-top: 2px solid rgb(40,114,51);
+  border-left: 2px solid rgb(0,187,45);
+  background: #333;
+}
 /* menu laterale */
 .b a{
   margin-top: 20px;
@@ -101,4 +133,48 @@
   float: right;
   padding-top: 3px;
   padding-right: 18px;
+}
+
+.input_Utente{
+  width: 90%;
+  padding: 13px 20px;
+  border-radius: 5px;
+  border-color: 1px solid #ccc;
+  margin: 8px 0 15px 0 ;
+}
+.input_Utente[type=submit]{
+  width: 96%;
+
+  border: 2px solid rgba(0,0,200,0.5);
+}
+
+.table{
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+.table th{
+  border: 2px solid black;
+  padding: 5px;
+}
+.table td{
+  border: 1px solid grey;
+  padding: 4px;
+}
+.table input{
+  width: 100%;
+  text-align: center;
+  border: none;
+  background-color: inherit;
+}
+.table tfoot{
+  background-color: rgba(120,120,120,0.5);
+}
+.btn_Tbl{
+  width: 25%;
+  border: 2px solid rgba(0,0,200,0.5);
+  padding: 5px 20px;
+  border-radius: 5px;
+  margin-left: 39.5%;
+  margin-top: 15px;
 }

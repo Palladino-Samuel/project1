@@ -2,35 +2,55 @@
 <html lang="en">
 
   <head>
-      <title> seconda pagina </title>
+      <title > Pagina utente </title>
       <meta charset="UTF-8">
       <meta name="viewport" id="viewportMeta" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+      <link rel="stylesheet" href="css/flex_structure.css">
+      <link rel="stylesheet" href="css/structure.css">
+      <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
+  <body class="flex_container">
 
       <header >
-          <h1> TITOLO 3 </h1>
+          <h1 class="titolo1"> Pagina Utente </h1>
+          <p class="font_3">pagina di inserimento dati dell'utente</p>
       </header>
-
+      <nav class="nav_horizontal">
+          <ul class="uM_Utente " >
+              <li class="aM_Utente" >Home</li>
+              <li ><a class="aM_Utente" href="prima_pagina.html">pag1</a></li>
+              <li ><a class="aM_Utente" href="seconda_pagina.html">pag2</a></li>
+              <li ><a class="aM_Utente" href="pagina_utente.html">pag3 </a></li>
+              <input class="btnMenu" id="btnM_Utente" type="submit" name="" value="vai">
+              <li class="srchMenu" id="srchM_Utente"> <input  type="search" name="" value=""> </li>
+          </ul>
+      </nav>
+      <nav class="nav_vertical "><!--nav bar-->
+          <div class="div_NaV" id="div1_NaV"> <a href="prima_pagina.html">pagina 1</a> </div>
+          <div class="div_NaV"> <a href="seconda_pagina.html">pagina 2</a> </div>
+          <div class="div_NaV"> <a href="pagina_utente.html">pagina 3</a> </div>
+          <div class="div_NaV"> <a href="#">pagina...</a> </div>
+      </nav>
       <section>
-        <h2>inserimento dati utente</h2>
+        <h2 class="font_3">inserimento</h2>
         <aside >              <!--  section->aside   -->
-            <h3>dati personali:</h3>
+            <h3>Dati personali:</h3>
             <form  action="url" method="post">
-                nome:
-                <input type="text" name="nome" value="nome"><br>
-                cognome:
-                <input type="text" name="cognome" value="cognome"><br>
-                data nascita:
-                <input type="date" name="bday"><br>
-                <input type="submit" name="invia" >
+                <label for="nome">Nome:</label><br>
+                <input class="input_Utente" type="text" id="nome"name="nome" placeholder="nome"><br>
+                <label>Cognome: <br>
+                <input class="input_Utente" type="text" name="cognome" placeholder="cognome"><br>
+                </label>
+                Data nascita:
+                <input class="input_Utente" type="date" name="bday"><br>
+                <input class="input_Utente" type="submit" name="invia" >
             </form>
         </aside>
 
         <aside>
             <form action="url" method="post" autocomplete="off">
-                <h3>inserisci una tua descrizione:</h3>
-                <textarea name="name" rows="8" cols="50"></textarea>
+                <h3>Inserisci una tua descrizione:</h3>
+                <textarea name="name" rows="5" cols="100"></textarea>
             </form>
         </aside>
 
@@ -38,8 +58,8 @@
           <h3>tabella:</h3>
           <form action="sommaFunction()">
 
-              <table>
-                <caption>nome e guadagni</caption>
+              <table class="table">
+                <caption>Cognome e guadagni</caption>
                   <thead>
                     <tr>
                       <th>n</th>
@@ -95,21 +115,10 @@
                 script non supportato
               </noscript>
 
-              <button type="button" onclick="sommaFunction()">somma</button>
+              <button class="btn_Tbl" type="button" onclick="sommaFunction()">somma</button>
         </section>
 
       </section>
-
-      <nav ><!--nav bar-->
-          <strong>pagine disponibili:</strong>
-          <ul>
-            <li><a href="prima_pagina.html">pagina 1</a></li>
-            <li><a href="seconda_pagina.html">pagina 2</a></li>
-            <li><a href="pagina_utente.html">pagina 3</a></li>
-          </ul>
-      </nav>
-
-
 
       <footer><!-- footer-->
           <address>

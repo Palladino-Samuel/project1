@@ -5,28 +5,45 @@
       <title> seconda pagina </title>
       <meta charset="UTF-8">
       <meta name="viewport" id="viewportMeta" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+      <link rel="stylesheet" href="css/side_bar.css">
+      <link rel="stylesheet" href="css/structure.css">
+      <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
-      <header >
-          <h1> TITOLO 2 </h1>
+      <header class="header_container">
+          <h1 class="titolo2"> Immagini </h1>
+          <div class="sbar_div"  id="side_div">
+              <a href="#" id="close_btn" onclick="close_Nav()">x</a>
+              <a href="prima_pagina.html">Pagina1</a>
+              <a href="seconda_pagina.html">Pagina2</a>
+              <a href="pagina_utente.html">Pagina3</a>
+          </div>
+          <span class="btn_OpenMenu" onclick="openNav()">&#9776; Menu </span>
       </header>
 
-      <section>
-          <h2>appartamenti disponibili</h2>
+      <section class="section_container">
+          <h2>Appartamenti disponibili</h2>
             <article >
-              <h3>seleziona tipo di appartamento (clicca l'immagine):</h3>
-              <a href="https://mondodesign.it/favolose-ville-da-sogno-piscina/" target="_blank">
-                <img src="img/casa_1.jpg" alt="villa" width="145" height="100"></a>
-                <p>testo villa dettagli metratura località e varie </p>
-
-              <a href="https://www.designdiffusion.com/2018/07/23/appartamento-citylife-milano/" target="_blank">
-                <img src="img/casa_2.jpg" alt="city life" width="145" height="100"></a>
-                <p>testo appartamento dettagli metratura località e varie </p>
-
-              <a href="https://baitaresch.it" target="_blank">
-                <img src="img/casa_3.jpg" alt="baita" width="145" height="100"></a>
-                <p>testo baita dettagli metratura località e varie </p>
+              <h3>Seleziona tipo di appartamento (clicca l'immagine):</h3>
+              <div class="casa_div_1" id="div_margin_1">
+                <a href="https://medium.com/@magnaestates/the-most-beautiful-villa-on-the-costa-del-sol-c5b6144640b0" target="_blank">
+                  <img src="img/villa.jpeg" alt="villa" >
+                  <p>testo villa dettagli metratura località e varie </p>
+                </a>
+              </div>
+              <div class="casa_div_1">
+                <a href="https://www.decoral.com/it/referenze/residenziale/residence-libeskind.html" target="_blank">
+                  <img src="img/city.jpg" alt="city life" >
+                  <p > appartamento dettagli metratura località e varie </p>
+                </a>
+              </div>
+              <div class="casa_div_1">
+                <a href="https://www.bergfex.com/sommer/groeden-wolkenstein/gran-baita-sporthotel/" target="_blank">
+                  <img src="img/baita.jpg" alt="baita" >
+                  <p>testo baita dettagli metratura località e varie </p>
+                </a>
+              </div>
             </article>
       </section>
 
@@ -39,13 +56,20 @@
           </ul>
       </nav>
 
-
-
-      <footer><!-- footer-->
+      <footer class="footer3"><!-- footer-->
           <address>
             Contattaci:
             <a href="mailto:samuel.palladino@soprasteria.com">samuel.palladino@soprasteria.com</a><br>
           </address>
       </footer>
+
+      <script>
+          function openNav(){
+            document.getElementById("side_div").style.width = "300px";
+          }
+          function close_Nav(){
+            document.getElementById("side_div").style.width= "0";
+          }
+      </script>
   </body>
 </html>

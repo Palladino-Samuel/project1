@@ -6,6 +6,7 @@
 .header_container {
   width: 100%;
   height: 10%;
+  border-bottom: 1px solid grey;
 }
 
 .section_container {
@@ -39,12 +40,17 @@
   float: left;
 }
 .footer2 {
-  width: 99%;
+
   margin-top: 450px;
   padding: auto ;
   border-top: 1px solid #333;
   border-left: 1px solid #333;
   border-radius: 2px;
+}
+.footer3{
+  width: 99%;
+  border-top: 1px solid #333;
+  padding: 5px;
 }
 
 /*menu orizzontale prima_pagina.html*/

@@ -1,0 +1,30 @@
+.sbar_div{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  background-color: #111;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+#close_btn{
+  margin: 10px 20px 500px 0;
+  font-size: 30px;
+  border: none;
+  padding: 0px;
+  float: right;
+}
+.sbar_div a{
+  text-decoration: none;
+  color: #818181;
+  padding: 20px 32px;
+  margin: 35px;
+  border-left: 4px solid red;
+  font-size: 20px;
+  display: block;
+}
+.sbar_div a:hover{
+  color: white;
+}

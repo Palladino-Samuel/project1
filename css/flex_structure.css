@@ -7,7 +7,7 @@
   height: auto;
   width: 100%;
   background: linear-gradient(gold, white);
-  padding: 8% 0 8% 0;
+  padding: 6% 0 6% 0;
 }
 /*nav verticale*/
 .nav_vertical{
@@ -53,20 +53,18 @@
   background-color: white;
   margin-right: 0px;
 }
-section >aside{
+.div_section >aside{
   margin: 35px;
   background-color: #f2f2f2;
   padding: 18px;
   border-radius: 2px;
-  border-right: 3px solid gold;
 }
 
-section >section{
+.div_section >section{
   margin: 35px;
   background-color: #f2f2f2;
   padding: 18px;
   border-radius: 2px;
-  border-right: 3px solid gold;
 }
 
 .flex_container >footer{

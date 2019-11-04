@@ -31,7 +31,7 @@
           <div class="div_NaV"> <a href="pagina_utente.html">pagina 3</a> </div>
           <div class="div_NaV"> <a href="#">pagina...</a> </div>
       </nav>
-      <section>
+      <section class="div_section">
         <h2 class="font_3">inserimento</h2>
         <aside >              <!--  section->aside   -->
             <h3>Dati personali:</h3>
@@ -46,18 +46,15 @@
                 <input class="input_Utente" type="submit" name="invia" >
             </form>
         </aside>
-
         <aside>
             <form action="url" method="post" autocomplete="off">
                 <h3>Inserisci una tua descrizione:</h3>
                 <textarea name="name" rows="5" cols="100"></textarea>
             </form>
         </aside>
-
         <section>
           <h3>tabella:</h3>
           <form action="sommaFunction()">
-
               <table class="table">
                 <caption>Cognome e guadagni</caption>
                   <thead>
@@ -97,27 +94,9 @@
                     </tr>
                   </tfoot>
               </table>
-
           </form>
-
-              <script type="text/javascript">
-                  function sommaFunction(){
-                     var a1 = parseInt(document.getElementById("a1").value);
-                     var a2 = parseInt(document.getElementById("a2").value);
-                     var a3 = parseInt(document.getElementById("a3").value);
-                     var a4 = parseInt(document.getElementById("a4").value);
-                     var som=(a1+a2+a3+a4);
-                     document.getElementById("somma").innerHTML=(som+'  €');
-                  }
-              </script>
-
-              <noscript>
-                script non supportato
-              </noscript>
-
-              <button class="btn_Tbl" type="button" onclick="sommaFunction()">somma</button>
+          <button class="btn_Tbl" type="button" onclick="sommaFunction()">somma</button>
         </section>
-
       </section>
 
       <footer><!-- footer-->
@@ -126,5 +105,20 @@
             <a href="mailto:samuel.palladino@soprasteria.com">samuel.palladino@soprasteria.com</a><br>
           </address>
       </footer>
+
+      <script type="text/javascript">
+          function sommaFunction(){
+             var a1 = parseInt(document.getElementById("a1").value);
+             var a2 = parseInt(document.getElementById("a2").value);
+             var a3 = parseInt(document.getElementById("a3").value);
+             var a4 = parseInt(document.getElementById("a4").value);
+             var som=(a1+a2+a3+a4);
+             document.getElementById("somma").innerHTML=(som+'  €');
+          }
+      </script>
+      <noscript>
+        script non supportato
+      </noscript>
+
     </body>
 </html>

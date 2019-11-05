@@ -33,9 +33,9 @@
   text-decoration: none;
   color: white;
   line-height: 83px;
-  padding: 20% 35% ;
+  padding: 8% 35% ;
 }
-.div_NaV> a:hover{
+.div_NaV:hover{
   background-color: rgb(15,23,34);
 }
 #div1_NaV{
@@ -58,6 +58,10 @@
   background-color: #f2f2f2;
   padding: 18px;
   border-radius: 2px;
+}
+
+input[type=text]:focus{
+  background-color: lightblue;
 }
 
 .div_section >section{
